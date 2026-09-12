@@ -11,19 +11,24 @@ export default function Home() {
           Seu trabalho elétrico, com resultado claro.
         </h1>
         <p className="mt-5 text-lg leading-8 text-slate-300">
-          A base do MVP está pronta. As jornadas, recargas e metas serão
-          adicionadas nas próximas etapas.
+          Registre sua jornada e transforme quilômetros, horas e energia em um resultado claro.
         </p>
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <Link
+          href="/jornadas/nova"
+          className="mt-8 flex min-h-14 w-full items-center justify-center rounded-2xl bg-lime-400 px-5 text-base font-bold text-slate-950 shadow-[0_14px_40px_rgba(163,230,53,0.16)] transition hover:bg-lime-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+        >
+          + Registrar Jornada
+        </Link>
+        <div className="mt-3 flex flex-col gap-3 sm:flex-row">
           <Link
             href="/entrar"
-            className="flex min-h-12 items-center justify-center rounded-xl bg-lime-400 px-5 font-bold text-slate-950 transition hover:bg-lime-300 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+            className="flex min-h-12 flex-1 items-center justify-center rounded-xl border border-white/15 px-5 font-semibold text-white transition hover:border-white/30 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             Entrar
           </Link>
           <Link
             href="/cadastro"
-            className="flex min-h-12 items-center justify-center rounded-xl border border-white/15 px-5 font-semibold text-white transition hover:border-white/30 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
+            className="flex min-h-12 flex-1 items-center justify-center rounded-xl border border-white/15 px-5 font-semibold text-white transition hover:border-white/30 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white"
           >
             Criar conta
           </Link>

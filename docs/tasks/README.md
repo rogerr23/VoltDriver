@@ -19,6 +19,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 011 | [API de configuração do veículo](011-api-configuracao-veiculo.md) | API | `feat(API): add vehicle configuration persistence` |
 | 012 | [Tela de configuração do veículo](012-tela-configuracao-veiculo.md) | FRONTEND | `feat(FRONTEND): add vehicle configuration screen` |
 | 013 | [API de registro de jornadas](013-api-registro-jornadas.md) | API | `feat(API): add work session registration` |
+| 014 | [Tela de registro de jornadas](014-tela-registro-jornadas.md) | FRONTEND | `feat(FRONTEND): add work session registration screen` |
 
 ## Padrão para as próximas tasks
 
