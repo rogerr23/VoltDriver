@@ -6,7 +6,7 @@ O VoltDriver ajuda o motorista a acompanhar receitas, custos de energia, lucro o
 
 ## Status
 
-Projeto em fase inicial de construção do MVP. A fundação Next.js está configurada e as funcionalidades serão adicionadas em pequenas etapas.
+Projeto em fase inicial de construção do MVP. A fundação Next.js, o motor de cálculos e o schema inicial do Supabase estão configurados.
 
 ## Stack planejada
 
@@ -63,5 +63,25 @@ NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
 ```
 
 Não adicione `.env.local` ou chaves privadas ao Git.
+
+O schema é versionado em `supabase/migrations`. Para executar o Supabase localmente, mantenha o Docker ativo e use:
+
+```bash
+pnpm db:start
+pnpm db:reset
+pnpm db:lint
+```
+
+Após alterar o schema, atualize os tipos TypeScript gerados:
+
+```bash
+pnpm db:types
+```
+
+Encerre os serviços locais quando terminar:
+
+```bash
+pnpm db:stop
+```
 
 Este README será atualizado conforme cada etapa do projeto for concluída.

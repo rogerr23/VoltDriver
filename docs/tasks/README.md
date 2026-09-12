@@ -13,6 +13,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 005 | [Motor de cálculos](005-motor-de-calculos.md) | API | `feat(API): add business calculation engine` |
 | 006 | [Organização da configuração do Claude](006-organizacao-configuracao-claude.md) | Projeto | `chore(PROJECT): organize Claude workspace settings` |
 | 007 | [Clientes Supabase](007-clientes-supabase.md) | API | `feat(API): configure Supabase clients` |
+| 008 | [Schema inicial do Supabase](008-schema-inicial-supabase.md) | API | `feat(API): add initial database schema` |
 
 ## Padrão para as próximas tasks
 

@@ -1,0 +1,2 @@
+-- Dados de referência serão adicionados somente quando houver usuários locais de teste.
+-- A planilha original não é importada pelo VoltDriver.
