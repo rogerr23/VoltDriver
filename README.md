@@ -49,6 +49,7 @@ Verificações disponíveis:
 ```bash
 pnpm lint
 pnpm typecheck
+pnpm test
 pnpm build
 ```
 
