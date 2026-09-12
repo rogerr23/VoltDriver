@@ -6,7 +6,7 @@ O VoltDriver ajuda o motorista a acompanhar receitas, custos de energia, lucro o
 
 ## Status
 
-Projeto em fase inicial de construção do MVP. A análise de negócio e as regras principais já foram documentadas; a aplicação ainda não foi implementada.
+Projeto em fase inicial de construção do MVP. A fundação Next.js está configurada e as funcionalidades serão adicionadas em pequenas etapas.
 
 ## Stack planejada
 
@@ -27,5 +27,27 @@ Projeto em fase inicial de construção do MVP. A análise de negócio e as regr
 ## Documentação
 
 As regras de negócio, entidades, cálculos e plano de implementação estão em [docs/VOLTDRIVER_MVP.md](docs/VOLTDRIVER_MVP.md).
+
+## Desenvolvimento local
+
+Requisitos:
+
+- Node.js 20.9 ou superior
+- pnpm 11
+
+Instale as dependências e inicie o servidor:
+
+```bash
+pnpm install
+pnpm dev
+```
+
+Verificações disponíveis:
+
+```bash
+pnpm lint
+pnpm typecheck
+pnpm build
+```
 
 Este README será atualizado conforme cada etapa do projeto for concluída.
