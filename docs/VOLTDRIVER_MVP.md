@@ -1,6 +1,6 @@
 # VoltDriver — referência funcional do MVP
 
-Status: análise inicial, sem implementação
+Status: referência funcional do MVP, com implementação em andamento
 
 Nome público do produto: **VoltDriver**.
 
@@ -189,6 +189,8 @@ A jornada não pede onde a energia foi carregada. Para manter o formulário curt
 
 Essa regra se aproxima da planilha e impede que uma nova recarga altere retroativamente jornadas já calculadas.
 
+A média ponderada considera somente recargas do veículo ativo com data menor ou igual à data da jornada. A tarifa resultante é limitada às quatro casas decimais suportadas pelo snapshot antes do cálculo, mantendo a confirmação exibida coerente com o histórico persistido.
+
 ### Recarga
 
 ```text
@@ -250,6 +252,7 @@ Estados sem dados precisam de mensagens próprias. Exemplo: `Registre sua primei
 ### Registrar jornada (`/jornadas/nova`)
 
 - Campos: data, aplicativo, km, tempo online, ganho bruto e gorjeta opcional.
+- O tempo online é apresentado em horas e minutos e convertido para minutos totais antes da persistência.
 - Botão grande de salvar.
 - Confirmação imediata com receita, R$/km, R$/hora, kWh estimados, custo de energia, lucro e economia.
 - Edição/exclusão pode entrar na mesma área quando o histórico mínimo for adicionado.

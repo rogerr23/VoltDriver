@@ -18,6 +18,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 010 | [Telas de autenticação](010-telas-de-autenticacao.md) | FRONTEND | `feat(FRONTEND): add mobile authentication screens` |
 | 011 | [API de configuração do veículo](011-api-configuracao-veiculo.md) | API | `feat(API): add vehicle configuration persistence` |
 | 012 | [Tela de configuração do veículo](012-tela-configuracao-veiculo.md) | FRONTEND | `feat(FRONTEND): add vehicle configuration screen` |
+| 013 | [API de registro de jornadas](013-api-registro-jornadas.md) | API | `feat(API): add work session registration` |
 
 ## Padrão para as próximas tasks
 
