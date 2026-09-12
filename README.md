@@ -6,7 +6,7 @@ O VoltDriver ajuda o motorista a acompanhar receitas, custos de energia, lucro o
 
 ## Status
 
-Projeto em fase inicial de construção do MVP. A fundação técnica, o motor de cálculos, o schema inicial do Supabase e o fluxo de autenticação por e-mail e senha estão configurados.
+Projeto em fase inicial de construção do MVP. A fundação técnica, o motor de cálculos, o schema inicial, a autenticação e a API de configuração do veículo estão preparados.
 
 ## Stack planejada
 
@@ -69,6 +69,10 @@ Não adicione `.env.local` ou chaves privadas ao Git.
 A base de autenticação usa e-mail e senha com sessões armazenadas em cookies. O Proxy do Next.js renova a sessão, e páginas ou APIs privadas devem chamar `requireAuthenticatedUser()` antes de acessar dados do motorista.
 
 As telas mobile-first estão disponíveis em `/entrar` e `/cadastro`.
+
+### Configuração do veículo
+
+A API valida e salva o veículo ativo do motorista, incluindo consumo, autonomia, tarifas de energia e referências de gasolina. A interface para editar esses dados será adicionada na próxima task de frontend.
 
 O schema é versionado em `supabase/migrations`. Para executar o Supabase localmente, mantenha o Docker ativo e use:
 

@@ -16,6 +16,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 008 | [Schema inicial do Supabase](008-schema-inicial-supabase.md) | API | `feat(API): add initial database schema` |
 | 009 | [Autenticação server-side](009-autenticacao-server-side.md) | API | `feat(API): add server-side authentication foundation` |
 | 010 | [Telas de autenticação](010-telas-de-autenticacao.md) | FRONTEND | `feat(FRONTEND): add mobile authentication screens` |
+| 011 | [API de configuração do veículo](011-api-configuracao-veiculo.md) | API | `feat(API): add vehicle configuration persistence` |
 
 ## Padrão para as próximas tasks
 
