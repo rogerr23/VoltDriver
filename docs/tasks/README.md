@@ -11,6 +11,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 003 | [Fundação Next.js](003-fundacao-nextjs.md) | Projeto | `b2919ec` |
 | 004 | [Histórico de tasks](004-historico-de-tasks.md) | Projeto | `docs(PROJECT): add task history` |
 | 005 | [Motor de cálculos](005-motor-de-calculos.md) | API | `feat(API): add business calculation engine` |
+| 006 | [Organização da configuração do Claude](006-organizacao-configuracao-claude.md) | Projeto | `chore(PROJECT): organize Claude workspace settings` |
 
 ## Padrão para as próximas tasks
 
