@@ -28,6 +28,8 @@ Projeto em fase inicial de construção do MVP. A fundação Next.js está confi
 
 As regras de negócio, entidades, cálculos e plano de implementação estão em [docs/VOLTDRIVER_MVP.md](docs/VOLTDRIVER_MVP.md).
 
+O registro do que foi realizado em cada etapa está em [docs/tasks/README.md](docs/tasks/README.md).
+
 ## Desenvolvimento local
 
 Requisitos:

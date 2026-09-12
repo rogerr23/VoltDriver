@@ -447,3 +447,7 @@ Cada task concluída deve terminar com seus arquivos versionados em commit. Ante
 - Configuração e manutenção: `chore(PROJECT): ...`.
 
 Os scopes devem permanecer em maiúsculas conforme definido acima. Commits de integração que incluam contratos compartilhados devem ser separados pela responsabilidade predominante ou, quando isso não for possível sem quebrar a entrega, usar `chore(PROJECT)` com justificativa no resumo da task.
+
+### Histórico das tasks
+
+Cada task concluída deve criar ou atualizar seu registro em `docs/tasks/`. O documento precisa informar objetivo, motivo, entregas, arquivos relevantes, decisões e verificações executadas. O índice `docs/tasks/README.md` deve ser atualizado no mesmo commit da task.
