@@ -14,6 +14,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 006 | [Organização da configuração do Claude](006-organizacao-configuracao-claude.md) | Projeto | `chore(PROJECT): organize Claude workspace settings` |
 | 007 | [Clientes Supabase](007-clientes-supabase.md) | API | `feat(API): configure Supabase clients` |
 | 008 | [Schema inicial do Supabase](008-schema-inicial-supabase.md) | API | `feat(API): add initial database schema` |
+| 009 | [Autenticação server-side](009-autenticacao-server-side.md) | API | `feat(API): add server-side authentication foundation` |
 
 ## Padrão para as próximas tasks
 
