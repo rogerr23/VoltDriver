@@ -53,4 +53,15 @@ pnpm test
 pnpm build
 ```
 
+## Supabase
+
+Copie `.env.example` para `.env.local` e informe a URL e a chave publicável disponíveis no painel do projeto Supabase:
+
+```dotenv
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=
+```
+
+Não adicione `.env.local` ou chaves privadas ao Git.
+
 Este README será atualizado conforme cada etapa do projeto for concluída.
