@@ -23,6 +23,7 @@ As metas só são úteis quando traduzem as jornadas em receita, distância e ec
 ## Decisões
 
 - Um alvo igual a zero significa que aquela dimensão não foi configurada; por isso não há percentual nem saldo artificial para ela.
+- Se a economia acumulada for negativa, o valor financeiro continua disponível para a Home, mas o progresso da meta usa piso de zero.
 - As metas só configuram o mês vigente nesta etapa. Histórico, troca de mês e edição de meses anteriores entram em uma task futura.
 - O cálculo de economia usa os snapshots da jornada, em vez da configuração atual do veículo, para manter o histórico correto.
 - Métricas de progresso são derivadas em leitura; não são duplicadas no banco.
@@ -41,6 +42,8 @@ As metas só são úteis quando traduzem as jornadas em receita, distância e ec
 - `git diff --check`.
 - Por solicitação do usuário, `pnpm test`, `pnpm lint`, `pnpm typecheck` e `pnpm build` foram adiados para a validação após a Task 20.
 
-## Commit
+## Commits
 
 `feat(API): add monthly goals persistence`
+
+`feat(API): harden home goal progress`

@@ -141,7 +141,10 @@ export async function getCurrentMonthGoalOverviewForUser(
   );
   const revenue = calculateGoalProgress(metrics.totalRevenue, targets.revenueTarget);
   const distance = calculateGoalProgress(metrics.distanceKm, targets.distanceTargetKm);
-  const savings = calculateGoalProgress(metrics.estimatedSavings, targets.savingsTarget);
+  const savings = calculateGoalProgress(
+    Math.max(metrics.estimatedSavings, 0),
+    targets.savingsTarget,
+  );
   const remainingCalendarDaysIncludingToday = getRemainingCalendarDaysIncludingToday(now);
 
   return {

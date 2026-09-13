@@ -116,7 +116,7 @@ function calculateProfitPerHourChange(
   if (
     current.profitPerHour === null ||
     previous.profitPerHour === null ||
-    previous.profitPerHour === 0
+    previous.profitPerHour <= 0
   ) {
     return null;
   }
@@ -239,7 +239,10 @@ export async function getAuthenticatedHomeDashboard(): Promise<HomeDashboardData
   const chargingThisMonth = calculateChargingSummary(chargingResult.data);
   const revenue = calculateGoalProgress(month.totalRevenue, goalResult.data?.revenue_target ?? 0);
   const distance = calculateGoalProgress(month.distanceKm, goalResult.data?.distance_target_km ?? 0);
-  const savings = calculateGoalProgress(month.estimatedSavings, goalResult.data?.savings_target ?? 0);
+  const savings = calculateGoalProgress(
+    Math.max(month.estimatedSavings, 0),
+    goalResult.data?.savings_target ?? 0,
+  );
   const requiredDailyRevenue = calculateRequiredDailyAmount(
     revenue,
     range.remainingCalendarDaysIncludingToday,

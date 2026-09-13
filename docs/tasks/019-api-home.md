@@ -32,6 +32,8 @@ Os dados já podem ser registrados, mas ainda estão dispersos. A Home precisa d
 - Receita, lucro, custo energético, economia, km, eficiência, horas e as três metas estão disponíveis no contrato para a interface.
 - Gráficos de seis meses, manutenção, relatórios e score geral continuam fora por decisão explícita do escopo do MVP.
 - A comparação de lucro por hora passou a tratar variações inferiores a 0,5% como estáveis, evitando a mensagem incorreta “caiu 0%”.
+- Economia negativa continua visível como resultado financeiro, mas seu progresso de meta usa piso de 0% para não produzir um percentual inválido.
+- A comparação de lucro/hora só é calculada quando o período anterior tem uma base positiva.
 
 ## Arquivos principais
 
@@ -49,3 +51,5 @@ Os dados já podem ser registrados, mas ainda estão dispersos. A Home precisa d
 `feat(API): add home dashboard aggregation`
 
 `feat(API): refine home dashboard insights`
+
+`feat(API): harden home goal progress`
