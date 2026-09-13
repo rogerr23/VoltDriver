@@ -21,6 +21,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 013 | [API de registro de jornadas](013-api-registro-jornadas.md) | API | `feat(API): add work session registration` |
 | 014 | [Tela de registro de jornadas](014-tela-registro-jornadas.md) | FRONTEND | `feat(FRONTEND): add work session registration screen` |
 | 015 | [API de registro de recargas](015-api-registro-recargas.md) | API | `feat(API): add charging session registration` |
+| 016 | [Tela de registro de recargas](016-tela-registro-recargas.md) | FRONTEND | `feat(FRONTEND): add charging session registration screen` |
 
 ## Padrão para as próximas tasks
 

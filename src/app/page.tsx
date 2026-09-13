@@ -33,12 +33,20 @@ export default function Home() {
             Criar conta
           </Link>
         </div>
-        <Link
-          href="/veiculo"
-          className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-lime-300 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
-        >
-          Configurar meu veículo →
-        </Link>
+        <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2">
+          <Link
+            href="/recargas/nova"
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-lime-300 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+          >
+            Registrar recarga →
+          </Link>
+          <Link
+            href="/veiculo"
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-lime-300 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+          >
+            Configurar meu veículo →
+          </Link>
+        </div>
       </section>
     </main>
   );

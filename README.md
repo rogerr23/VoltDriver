@@ -6,7 +6,7 @@ O VoltDriver ajuda o motorista a acompanhar receitas, custos de energia, lucro o
 
 ## Status
 
-Projeto em fase inicial de construção do MVP. A fundação técnica, o motor de cálculos, o schema inicial, a autenticação, os fluxos de veículo e jornada e a API de recargas estão preparados.
+Projeto em fase inicial de construção do MVP. A fundação técnica, o motor de cálculos, o schema inicial, a autenticação e os fluxos completos de veículo, jornada e recargas estão preparados.
 
 ## Stack planejada
 
@@ -86,7 +86,7 @@ A tela protegida mobile-first está disponível em `/jornadas/nova`. Após o reg
 
 A API de recargas valida data, local, tipo, kWh e custo total. Ela usa o veículo ativo do motorista, preserva snapshots de consumo e tarifa residencial e retorna custo por kWh, custo estimado por km, autonomia estimada e a diferença para carregar a mesma energia em casa.
 
-A interface mobile-first de recargas será adicionada no próximo commit de frontend.
+A tela protegida mobile-first está disponível em `/recargas/nova`. Depois de salvar, ela apresenta custo/kWh, custo estimado/km, autonomia estimada e a comparação com a tarifa residencial.
 
 O schema é versionado em `supabase/migrations`. Para executar o Supabase localmente, mantenha o Docker ativo e use:
 
