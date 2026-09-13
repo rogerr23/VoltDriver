@@ -233,10 +233,10 @@ export async function getAuthenticatedHomeDashboard(): Promise<HomeDashboardData
     throw new Error("Unable to load home dashboard", { cause: resultWithError.error });
   }
 
-  const month = toPeriodMetrics(monthSessionsResult.data);
-  const today = toPeriodMetrics(todaySessionsResult.data);
-  const previousComparablePeriod = toPeriodMetrics(previousSessionsResult.data);
-  const chargingThisMonth = calculateChargingSummary(chargingResult.data);
+  const month = toPeriodMetrics(monthSessionsResult.data ?? []);
+  const today = toPeriodMetrics(todaySessionsResult.data ?? []);
+  const previousComparablePeriod = toPeriodMetrics(previousSessionsResult.data ?? []);
+  const chargingThisMonth = calculateChargingSummary(chargingResult.data ?? []);
   const revenue = calculateGoalProgress(month.totalRevenue, goalResult.data?.revenue_target ?? 0);
   const distance = calculateGoalProgress(month.distanceKm, goalResult.data?.distance_target_km ?? 0);
   const savings = calculateGoalProgress(
