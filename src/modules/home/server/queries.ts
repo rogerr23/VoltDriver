@@ -158,12 +158,15 @@ function buildInsights(input: {
   if (input.profitPerHourChangePercentage !== null) {
     const change = Math.abs(input.profitPerHourChangePercentage).toFixed(0);
     const increased = input.profitPerHourChangePercentage > 0;
+    const stable = Math.abs(input.profitPerHourChangePercentage) < 0.5;
     insights.push({
       id: "profit-per-hour",
-      tone: increased ? "positive" : "attention",
-      message: increased
-        ? `Seu lucro por hora aumentou ${change}% em relação ao período anterior.`
-        : `Seu lucro por hora caiu ${change}% em relação ao período anterior.`,
+      tone: stable ? "neutral" : increased ? "positive" : "attention",
+      message: stable
+        ? "Seu lucro por hora ficou estável em relação ao período anterior."
+        : increased
+          ? `Seu lucro por hora aumentou ${change}% em relação ao período anterior.`
+          : `Seu lucro por hora caiu ${change}% em relação ao período anterior.`,
     });
   }
 
