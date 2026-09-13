@@ -98,6 +98,8 @@ A tela protegida mobile-first está disponível em `/metas`. Ela mostra o progre
 
 A consulta da Home reúne jornadas, recargas e metas do motorista para o dia e mês atuais. Ela calcula os indicadores com os snapshots históricos das jornadas, compara o lucro/hora com o mesmo período já decorrido no mês anterior e produz insights determinísticos para a interface.
 
+A rota protegida `/` é a Home mobile-first do produto. Ela prioriza receita e lucro de hoje, oferece acesso imediato ao registro de jornada e organiza métricas diárias, meta de receita, resumo mensal, recargas e insights em uma única rolagem.
+
 O schema é versionado em `supabase/migrations`. Para executar o Supabase localmente, mantenha o Docker ativo e use:
 
 ```bash

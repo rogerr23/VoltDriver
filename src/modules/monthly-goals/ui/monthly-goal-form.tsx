@@ -81,7 +81,7 @@ function ProgressCard({
         {format(progress.actual)}
       </p>
       <p className="mt-1 text-sm text-slate-500">
-        {target === null ? "Sem alvo no mês" : `de ${format(target)}`}
+        {target === null || target === 0 ? "Sem alvo no mês" : `de ${format(target)}`}
       </p>
       <div className="mt-4 h-2 overflow-hidden rounded-full bg-white/10">
         <div

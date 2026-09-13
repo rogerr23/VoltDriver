@@ -25,6 +25,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 017 | [API de metas mensais](017-api-metas-mensais.md) | API | `feat(API): add monthly goals persistence` |
 | 018 | [Tela de metas mensais](018-tela-metas-mensais.md) | FRONTEND | `feat(FRONTEND): add monthly goals screen` |
 | 019 | [API da Home](019-api-home.md) | API | `feat(API): add home dashboard aggregation` + revisão |
+| 020 | [Home mobile-first](020-home-mobile-first.md) | FRONTEND | `feat(FRONTEND): add mobile-first home dashboard` |
 
 ## Padrão para as próximas tasks
 
