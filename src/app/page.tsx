@@ -46,6 +46,12 @@ export default function Home() {
           >
             Configurar meu veículo →
           </Link>
+          <Link
+            href="/metas"
+            className="inline-flex min-h-11 items-center text-sm font-semibold text-lime-300 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-lime-300"
+          >
+            Ver metas mensais →
+          </Link>
         </div>
       </section>
     </main>

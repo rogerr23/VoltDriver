@@ -23,6 +23,7 @@ Este diretório registra as tasks concluídas no projeto VoltDriver. Cada arquiv
 | 015 | [API de registro de recargas](015-api-registro-recargas.md) | API | `feat(API): add charging session registration` |
 | 016 | [Tela de registro de recargas](016-tela-registro-recargas.md) | FRONTEND | `feat(FRONTEND): add charging session registration screen` |
 | 017 | [API de metas mensais](017-api-metas-mensais.md) | API | `feat(API): add monthly goals persistence` |
+| 018 | [Tela de metas mensais](018-tela-metas-mensais.md) | FRONTEND | `feat(FRONTEND): add monthly goals screen` |
 
 ## Padrão para as próximas tasks
 
